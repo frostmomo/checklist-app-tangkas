@@ -13,7 +13,7 @@ class Checklists(db.Model):
     updated_at = db.Column(db.TIMESTAMP(), nullable=True, default=datetime.datetime.utcnow())
     deleted_at = db.Column(db.TIMESTAMP(), nullable=True)
 
-    checklist_item = relationship("ChecklistItems", backref="checklists", uselist=False)
+    # checklist_item = relationship("ChecklistItems", backref="checklists", uselist=False)
     
     def __init__(
         self,
