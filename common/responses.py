@@ -18,7 +18,7 @@ class BaseResponse(object):
         return {
             # message / status/ data
                 'data':{
-                    'list': self.data,
+                    'data': self.data,
                     "total": self.total,
                     "page": self.page,
                     "limit": self.limit
